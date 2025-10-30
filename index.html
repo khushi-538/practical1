@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fun Facts Quiz</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Start / Name Entry Screen -->
+  <div class="start-container" id="start-container">
+    <h1>🎉 Fun Facts Quiz</h1>
+    <input type="text" id="username" placeholder="Enter your name" />
+    <button id="start-btn" class="btn">Continue ➡️</button>
+  </div>
+
+  <!-- Quiz Screen -->
+  <div class="quiz-container" id="quiz-container" style="display: none;">
+    <h1>🧠 Hello, <span id="user-name"></span>!</h1>
+    <div class="progress-bar">
+      <div id="progress-fill"></div>
+    </div>
+
+    <div class="timer">Time Left: <span id="time-remaining">5</span>s</div>
+
+    <div id="question-container">
+      <div id="question">Question text</div>
+      <div id="answer-buttons" class="btn-grid"></div>
+    </div>
+
+    <div class="controls">
+      <button id="next-btn" class="btn next-btn">Next ➡️</button>
+      <button id="restart-btn" class="btn restart-btn">🔄 Restart</button>
+    </div>
+
+    <div id="feedback"></div>
+  </div>
+
+  <!-- Leaderboard / High Score -->
+  <div class="leaderboard-container" id="leaderboard-container" style="display: none;">
+    <h2>🏆 Leaderboard</h2>
+    <ol id="leaderboard-list"></ol>
+    <button id="play-again-btn" class="btn">Play Again</button>
+  </div>
+</body>
+</html>
+
